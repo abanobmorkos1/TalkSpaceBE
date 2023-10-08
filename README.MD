@@ -6,6 +6,7 @@ Welcome to TalkSpace , a discussion app where users can post and engage in meani
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Features](#features)
+- [ERD] (#erd)
 - [Endpoints](#endpoints)
 - [ERD](#)
 
@@ -23,8 +24,9 @@ Welcome to TalkSpace , a discussion app where users can post and engage in meani
 2. Users have the ability to create, read, update, and delete discussions.
 3. Users are able to comment on discussions. 
 
-## ERD Diagram
-![./public/ERD.png](home)
+## ERD
+![ERD](public/ERD.png)
+
 ## Endpoints
 
 | Endpoint       | Method | Purpose                  |
