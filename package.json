@@ -2,7 +2,7 @@
   "name": "talkspacebe",
   "version": "1.0.0",
   "description": "Welcome to TalkSpace , a discussion app where users can post and engage in meaningful discussions.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node server.ts"
