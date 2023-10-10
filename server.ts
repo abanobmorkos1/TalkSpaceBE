@@ -5,10 +5,12 @@ const express = require('express')
 const morgan = require('morgan')
 const app = express()
 const PORT = process.env.PORT
+const cors = require('cors')
 
 //middleware configuration
 app.use(express.json())
 app.use(morgan('dev'))
+app.use(cors())
 
 
 
@@ -38,7 +40,6 @@ app.post('/discussions', async (req: Request, res: Response) => {
     }
 })
 
-// ID 
 app.get('/discussions/:id', async (req: Request, res: Response) =>{
     const {id} = req.params
     const findDiscussion = await prisma.discussion.findUnique({
