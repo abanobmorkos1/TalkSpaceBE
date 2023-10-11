@@ -14,7 +14,7 @@ app.use(cors())
 
 
 
-app.get('/', async (req: Request, res: Response) => {
+app.get('/discussions', async (req: Request, res: Response) => {
     try {
         const discussions = await prisma.discussion.findMany()
         res.status(200).json(discussions)
