@@ -12,7 +12,9 @@ app.use(express.json())
 app.use(morgan('dev'))
 app.use(cors())
 
-
+// app.get('/discussions' , (req: Request, res:Response) => {
+//     res.redirect('/')
+// })
 
 app.get('/', async (req: Request, res: Response) => {
     try {
@@ -36,7 +38,7 @@ app.post('/discussions', async (req: Request, res: Response) => {
         res.json(newDiscussion)
     } catch (error) {
         console.error('error updating' , error)
-        res.status(500).json({error: 'error with connection'})
+        res.status(500).json({error: 'error updating'})
     }
 })
 
@@ -63,15 +65,13 @@ app.put('/discussions/:id', async (req: Request , res: Response) => {
 
 app.delete('/discussions/:id' , async (req: Request , res: Response) => {
     const {id} = req.params
-    const {topic , discussion} = req.body
     const deleteDiscussion = await prisma.discussion.delete({
         where: {
-            id,
-            topic,
-            discussion
+            id
         }
     })
     res.json(deleteDiscussion)
+    
 })
 
 app.listen(PORT , () => console.log(`listening on Port: ${PORT}`));
