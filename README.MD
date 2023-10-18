@@ -47,4 +47,4 @@ To get started with the backend set up , follow these steps:
    yarn install
 
 ## deployed site
-![TalkSpaceBE](https://talkspacebe.onrender.com)
+[TalkSpaceBE](https://talkspacebe.onrender.com)
