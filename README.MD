@@ -19,10 +19,8 @@ Welcome to TalkSpace , a discussion app where users can post and engage in meani
 - mongodb
 
 ## Features:
+1. Users have the ability to create, read, update, and delete discussions.
 
-1. User Authentication to securely sign up and log in users.
-2. Users have the ability to create, read, update, and delete discussions.
-3. Users are able to comment on discussions. 
 
 ## ERD
 ![ERD](public/ERD.png)
