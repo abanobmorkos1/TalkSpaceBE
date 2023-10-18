@@ -6,9 +6,9 @@ Welcome to TalkSpace , a discussion app where users can post and engage in meani
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Features](#features)
-- [ERD] (#erd)
+- [ERD](#Erd)
 - [Endpoints](#endpoints)
-- [ERD](#)
+- [mockUps]
 
 
 
@@ -18,8 +18,6 @@ Welcome to TalkSpace , a discussion app where users can post and engage in meani
 - prisma
 - mongodb
 
-## Features:
-1. Users have the ability to create, read, update, and delete discussions.
 
 
 ## ERD
@@ -47,3 +45,6 @@ To get started with the backend set up , follow these steps:
    npm install
    # or
    yarn install
+
+## deployed site
+![TalkSpaceBE](https://talkspacebe.onrender.com)
